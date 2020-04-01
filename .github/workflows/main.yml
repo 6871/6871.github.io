@@ -34,7 +34,6 @@ jobs:
           git config --local user.name "ci"
           git add hw.html
           git commit -m "Action commit of hw.html"
-          echo 'Boo!'
 
       - name: Push html file
         run: |
