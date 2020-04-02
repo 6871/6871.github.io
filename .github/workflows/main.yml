@@ -42,4 +42,5 @@ jobs:
           git config --local user.email "ci@github.com"
           git config --local user.name "ci"
           git add wip.html
+          git commit -m "CI generated wip.html @ $(date)"
           git push
