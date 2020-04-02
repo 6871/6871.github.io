@@ -19,22 +19,24 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Get repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
 
-      - name: Generate HTML
-        run: printf '<html><body><p>Hello, World @ %s!</p></body></html>' "$(date)" > hw.html
+      - name: Fetch latest data file
+        run: curl -L -O https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv
 
-      - name: Dump HTML
-        run: cat hw.html
+      - name: Create CSV file of daily mortality rates - no running average
+        run: python3 ci/create_daily_rates_csv.py time_series_covid19_deaths_global.csv 0
 
-      - name: Commit html file
+      - name: Generate graph DIV file - no running average
+        run: python3 ci/create_graph_div.py daily_mortality_averaged_0_days.csv 'COVID-19 Daily Mortality Rate By Country - raw data, no averaging' daily_mortality_averaged_0_days.div
+
+      - name: Generate HTML file
+        run: ./ci/create_html_file.sh wip.html daily_mortality_averaged_0_days.div
+
+      - name: Commit and push HTML file
         run: |
           git config --local user.email "ci@github.com"
           git config --local user.name "ci"
-          git add hw.html
-          git commit -m "Action commit of hw.html"
-
-      - name: Push html file
-        run: |
+          git add wip.html
           git push
