@@ -56,13 +56,13 @@ jobs:
         run: python3 ci/create_graph_div.py daily_mortality_averaged_15_days.csv 'COVID-19 Daily Mortality Rate By Country - 15 day running average' daily_mortality_averaged_15_days.div
 
       - name: Generate HTML file
-        run: ./ci/create_html_file.sh wip.html daily_mortality_averaged_0_days.div daily_mortality_averaged_3_days.div daily_mortality_averaged_5_days.div daily_mortality_averaged_15_days.div
+        run: ./ci/create_html_file.sh index.html daily_mortality_averaged_0_days.div daily_mortality_averaged_3_days.div daily_mortality_averaged_5_days.div daily_mortality_averaged_15_days.div
 
       - name: Commit and push HTML file
         run: |
           git config --local user.email "ci@github.com"
           git config --local user.name "ci"
           git pull
-          git add wip.html
-          git commit -m "CI generated wip.html @ $(date)"
+          git add index.html
+          git commit -m "CI generated index.html @ $(date)"
           git push
