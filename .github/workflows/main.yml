@@ -1,11 +1,13 @@
 # https://help.github.com/en/actions
 #  https://help.github.com/en/actions/reference/workflow-syntax-for-github-actions
 # https://help.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions
+# https://crontab.guru/#0_*/1_*_*_*
 
-name: Data Refresh
+name: Update 6871.github.io
 
 on:
   schedule:
+    # 1 minute past every hour
     - cron: '0 */1 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
