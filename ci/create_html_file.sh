@@ -12,7 +12,7 @@ function main() {
   local graph_divs=("${@:2}")
 
   # Write HTML file head
-  cat html/index_head_1.txt > "${output_file}"
+  cat ci/html/index_head_1.txt > "${output_file}"
 
   # Write any graph DIV sections
   local graph_div
@@ -22,9 +22,9 @@ function main() {
 
   # Write HTML file tail
   {
-    cat html/index_tail_1.txt
+    cat ci/html/index_tail_1.txt
     printf '%s' "$(date)"
-    cat html/index_tail_2.txt
+    cat ci/html/index_tail_2.txt
   } >> "${output_file}"
 }
 
