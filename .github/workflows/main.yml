@@ -8,7 +8,6 @@ name: Update 6871.github.io
 
 on:
   schedule:
-    # 1 minute past every hour
     - cron: '*/15 * * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
