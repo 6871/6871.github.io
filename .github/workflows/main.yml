@@ -19,6 +19,11 @@ jobs:
       # Get repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
 
+      - name: Install Python librarries
+        run: |
+          pip3 install pandas
+          pip3 install plotly
+
       - name: Fetch latest data file
         run: curl -L -O https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv
 
