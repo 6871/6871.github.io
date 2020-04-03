@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td style="text-align: right">
-![Update index.html](https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg)
+<img src="https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg" alt="[Build Status Unavailable]">
 </td>
 </tr>
 </table>
