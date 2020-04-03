@@ -1,4 +1,4 @@
-![Update 6871.github.io](https://github.com/6871/6871.github.io/workflows/Update%206871.github.io/badge.svg)
+![Update index.html](https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg)
 
 # What
 

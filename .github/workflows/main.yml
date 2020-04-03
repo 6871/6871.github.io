@@ -8,7 +8,8 @@ name: Update index.html
 
 on:
   schedule:
-    - cron: '13,15 11 * * *'
+    # Run every 3 hours in case data is updated more often than daily
+    - cron: '0 0,3,6,9,12,15,18,21 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
