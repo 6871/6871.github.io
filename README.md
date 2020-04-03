@@ -1,5 +1,5 @@
 <!--suppress HtmlDeprecatedAttribute -->
-<img align="right" src="https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg" alt="[Build Status Unavailable]">
+<img align="right" src="![Graph Updater](https://github.com/6871/6871.github.io/workflows/Graph%20Updater/badge.svg)" alt="[Build Status Unavailable]">
 
 # What
 
