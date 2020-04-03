@@ -11,6 +11,9 @@
   <img src="https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg" alt="[Build Status Unavailable]">
 </div>
 
+<img align="right" src="https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg" alt="[Build Status Unavailable]">
+
+
 # What
 
 Publishes graphs showing COVID-19 daily mortality rates by country here:
