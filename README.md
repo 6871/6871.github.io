@@ -1,4 +1,4 @@
-<table>
+<table style="width: 100%">
 <tr>
 <td style="text-align: right">
 <img src="https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg" alt="[Build Status Unavailable]">
