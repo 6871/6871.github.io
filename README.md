@@ -1,4 +1,10 @@
+<table>
+<tr>
+<td style="text-align: right">
 ![Update index.html](https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg)
+</td>
+</tr>
+</table>
 
 # What
 
@@ -24,9 +30,10 @@ source data file of cumulative deaths is used as a starting point:
 
 * [```time_series_covid19_deaths_global.csv```](https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv)
 
-The following script uses the above file to generates a tidy data file
+The following script uses the above file to generate a tidy data file
 of daily totals (instead of cumulative ones) with optional rolling average
-applied:
+applied; it also generates summary data for countries that don't have an
+overall total in the data (e.g. Australia, Canada & China):
 
 * [```ci/create_daily_rates_csv.py```](ci/create_daily_rates_csv.py)
 
