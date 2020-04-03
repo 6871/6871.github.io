@@ -7,6 +7,10 @@
   </tr>
 </table>
 
+<div style="text-align: right">
+  <img src="https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg" alt="[Build Status Unavailable]">
+</div>
+
 # What
 
 Publishes graphs showing COVID-19 daily mortality rates by country here:
