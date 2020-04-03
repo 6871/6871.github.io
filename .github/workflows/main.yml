@@ -4,12 +4,11 @@
 # https://help.github.com/en/actions/reference/events-that-trigger-workflows
 # https://crontab.guru/#0_*/1_*_*_*
 
-name: Update 6871.github.io
+name: Update index.html
 
 on:
   schedule:
-    # 0 minute past every hour
-    - cron: '0 */1 * * *'
+    - cron: '13,15 11 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
