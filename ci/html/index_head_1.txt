@@ -4,3 +4,10 @@
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
+<table style="width: 100%">
+    <tr>
+        <td>
+            <a href="https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv" target="_blank" rel="noopener noreferrer">Source Data</a> courtesy of <a href="https://systems.jhu.edu/" target="_blank" rel="noopener noreferrer">JHU CSSE</a>
+        </td>
+        <td style="text-align: right">
+            Last updated

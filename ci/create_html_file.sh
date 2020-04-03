@@ -11,8 +11,12 @@ function main() {
   local output_file="${1}"
   local graph_divs=("${@:2}")
 
-  # Write HTML file head
-  cat ci/html/index_head_1.txt > "${output_file}"
+  # Write HTML file head; see: man strftime
+  {
+    cat ci/html/index_head_1.txt
+    printf ' %s' "$(date +'%^a %Y-%^b-%d %T %Z')"
+    cat ci/html/index_head_2.txt
+  } > "${output_file}"
 
   # Write any graph DIV sections
   local graph_div
@@ -21,11 +25,7 @@ function main() {
   done
 
   # Write HTML file tail
-  {
-    cat ci/html/index_tail_1.txt
-    printf '%s' "$(date)"
-    cat ci/html/index_tail_2.txt
-  } >> "${output_file}"
+  cat ci/html/index_tail_1.txt >> "${output_file}"
 }
 
 # Run the script

@@ -1,3 +1,4 @@
+<!--suppress HtmlDeprecatedAttribute -->
 <img align="right" src="https://github.com/6871/6871.github.io/workflows/Update%20index.html/badge.svg" alt="[Build Status Unavailable]">
 
 # What
@@ -17,6 +18,7 @@ updated daily around 2359 UTC.
   * Published infection levels likely correlate with testing ability:
     * Countries with low testing rates may have many unknown infections
     * Countries with high testing rates may have less unknown infections
+
 # How
 
 The following [John Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)

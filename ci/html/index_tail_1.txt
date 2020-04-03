@@ -1,19 +1,19 @@
 <p>Thanks to Johns Hopkins CSSE for the source data:</p>
 <ul>
   <li>
-    <a href="https://systems.jhu.edu/research/public-health/ncov/" target="_blank" rel="noopener noreferrer">https://systems.jhu.edu/research/public-health/ncov/</a><
-  /li>
+    <a href="https://systems.jhu.edu/research/public-health/ncov/" target="_blank" rel="noopener noreferrer">https://systems.jhu.edu/research/public-health/ncov/</a>
+  </li>
   <li>
     <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank" rel="noopener noreferrer">https://github.com/CSSEGISandData/COVID-19</a>
   </li>
   <ul>
     <li>
-      <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data" target="_blank" rel="noopener noreferrer">https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data</a><
-    /li>
+      <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data" target="_blank" rel="noopener noreferrer">https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data</a>
+    </li>
     <ul>
       <li>
-        <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series" target="_blank" rel="noopener noreferrer">https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series</a><
-      /li>
+        <a href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series" target="_blank" rel="noopener noreferrer">https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series</a>
+      </li>
       <ul>
         <li>
           <a href="https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv" target="_blank" rel="noopener noreferrer">https://github.com/CSSEGISandData/COVID-19/blob/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv</a>
@@ -22,4 +22,6 @@
     </ul>
   </ul>
 </ul>
-<p>Source data updated daily around 2359 UTC; page generated @
+<p>Source data updated daily around 2359 UTC</p>
+</body>
+</html>
