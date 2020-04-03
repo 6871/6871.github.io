@@ -9,7 +9,7 @@ name: Graph Updater
 on:
   schedule:
     # Run every 3 hours in case data is updated more often than daily
-    - cron: '0 */3 * * *'
+    - cron: '0 0,3,6,9,12,15,18,21 * * *'
     # Run every 10 minutes
     #- cron: '*/10 * * * *'
 
