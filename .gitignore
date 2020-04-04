@@ -3,3 +3,7 @@
 *.iml
 tmp
 venv
+debug_*.csv
+daily_mortality_averaged_*_days.csv
+daily_mortality_averaged_*_days.div
+time_series_covid19_deaths_global.csv
