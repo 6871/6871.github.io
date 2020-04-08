@@ -1,6 +1,0 @@
- by <a href="https://github.com/6871/6871.github.io" target="_blank" rel="noopener noreferrer">
-            <img src="https://github.com/6871/6871.github.io/workflows/Graph%20Updater/badge.svg" alt="[Build Status Unavailable]">
-        </a>
-        </td>
-    </tr>
-</table>

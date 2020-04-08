@@ -9,9 +9,11 @@ name: Graph Updater
 on:
   schedule:
     # Run every 3 hours in case data is updated more often than daily
-    - cron: '0 0,3,6,9,12,15,18,21 * * *'
+#    - cron: '0 0,3,6,9,12,15,18,21 * * *'
     # Run every 10 minutes
     #- cron: '*/10 * * * *'
+    # Run every 5 minutes
+    - cron: '*/5 * * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -30,41 +32,39 @@ jobs:
           pip3 install pandas
           pip3 install plotly
 
-      - name: Fetch latest data file
-        run: curl -L -O https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv
+      - name: Fetch latest data file & update timestamp
+        run: |
+          source_csv_file='time_series_covid19_deaths_global.csv'
+          curl -L -O "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/${source_csv_file)"
+          printf '%s' "$(date +'%^a %Y-%^b-%d %T %Z')" > update_timestamp.txt
 
-      - name: Create CSV file of daily mortality rates - no running average
-        run: python3 ci/create_daily_rates_csv.py time_series_covid19_deaths_global.csv 0
+      - name: Generate graph DIV files (from interim CSV files)
+        run: |
+          averages=(0 3 5 15)
 
-      - name: Generate graph DIV file - no running average
-        run: python3 ci/create_graph_div.py daily_mortality_averaged_0_days.csv 'COVID-19 Daily Mortality Rate By Country - raw data, no averaging' daily_mortality_averaged_0_days.div
+          for average in "${averages[@]}"; do
+            echo "Generating files; average=${average}"
 
-      - name: Create CSV file of daily mortality rates - 3 day running average
-        run: python3 ci/create_daily_rates_csv.py time_series_covid19_deaths_global.csv 3
+            echo 'create_daily_rates_csv...'
+            python3 \
+              ci/create_daily_rates_csv.py "${source_csv_file}" ${average}
 
-      - name: Generate graph DIV file - 3 day running average
-        run: python3 ci/create_graph_div.py daily_mortality_averaged_3_days.csv 'COVID-19 Daily Mortality Rate By Country - 3 day running average' daily_mortality_averaged_3_days.div
+            echo 'create_daily_rates_csv % population...'
+            python3 \
+              ci/create_daily_rates_csv.py "${source_csv_file}" ${average} \
+              data/population.csv
 
-      - name: Create CSV file of daily mortality rates - 5 day running average
-        run: python3 ci/create_daily_rates_csv.py time_series_covid19_deaths_global.csv 5
+            python3 ci/create_graph_div.py daily_mortality_averaged_${average}_days.csv graph_${average}_avg.div
+            python3 ci/create_graph_div.py daily_mortality_averaged_${average}_days_pct.csv graph_${average}_avg_pct.div
+          done
 
-      - name: Generate graph DIV file - 5 day running average
-        run: python3 ci/create_graph_div.py daily_mortality_averaged_5_days.csv 'COVID-19 Daily Mortality Rate By Country - 5 day running average' daily_mortality_averaged_5_days.div
+          ls -ltr
 
-      - name: Create CSV file of daily mortality rates - 15 day running average
-        run: python3 ci/create_daily_rates_csv.py time_series_covid19_deaths_global.csv 15
-
-      - name: Generate graph DIV file - 15 day running average
-        run: python3 ci/create_graph_div.py daily_mortality_averaged_15_days.csv 'COVID-19 Daily Mortality Rate By Country - 15 day running average' daily_mortality_averaged_15_days.div
-
-      - name: Generate HTML file
-        run: ./ci/create_html_file.sh index.html daily_mortality_averaged_0_days.div daily_mortality_averaged_3_days.div daily_mortality_averaged_5_days.div daily_mortality_averaged_15_days.div
-
-      - name: Commit and push HTML file
+      - name: Upload files
         run: |
           git config --local user.email "ci@github.com"
           git config --local user.name "ci"
           git pull
-          git add index.html
-          git commit -m "CI generated index.html @ $(date)"
+          git add update_timestamp.txt graph_*.div
+          git commit -m "CI update @ $(date)"
           git push
