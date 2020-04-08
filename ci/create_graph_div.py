@@ -4,7 +4,7 @@ import plotly.express
 import sys
 
 
-def get_plot_div(df, graph_title):
+def get_plot_div(df):
     fig = plotly.express.line(
         df,
         x='Date',
@@ -14,48 +14,46 @@ def get_plot_div(df, graph_title):
     )
 
     fig.update_layout(
-        title={
-            'text': graph_title,
-            'font_size': 24
-        },
-        xaxis={'tickformat': '%d %B<br>%Y (%a)'}
+        xaxis={'tickformat': '%d %B<br>%Y (%a)'},
+        margin=dict(l=25, r=25, b=25, t=25)
     )
 
     fig.update_traces(mode='lines+markers')
 
-    show_traces = [
-        'Australia:Australia Provinces Sum',
-        'Canada:Canada Provinces Sum',
-        'China:China Provinces Sum',
-        'Czechia:Main',
-        'France:Main',
-        'Germany:Main',
-        'Ireland:Main',
-        'Italy:Main',
-        'Spain:Main',
-        'United Kingdom:Main',
-        'US:Main'
-    ]
+    show_traces = {
+        'Australia:Australia Provinces Sum': 'yellow',
+        'Canada:Canada Provinces Sum': 'teal',
+        'China:China Provinces Sum': 'grey',
+        'Czechia:Main': 'blue',
+        'France:Main': 'green',
+        'Germany:Main': 'gold',
+        'Ireland:Main': 'lime',
+        'Italy:Main': 'orange',
+        'Spain:Main': 'magenta',
+        'United Kingdom:Main': 'blue',
+        'US:Main': 'red'
+    }
 
     for trace in fig['data']:
         trace.line.dash = 'dot'
-        if trace.name not in show_traces:
+        if trace.name in list(show_traces.keys()):
+            trace.line.color = show_traces[trace.name]
+        else:
             trace.visible = 'legendonly'
-        if trace.name == 'China:China Provinces Sum':
-            trace.line.color = 'grey'
+            trace.line.color = 'black'
 
-    return plotly.offline.plot(fig, include_plotlyjs=False, output_type='div')
+    return fig.to_html(full_html=False, include_plotlyjs=False)
 
 
-def write_graph_div_file(source_csv_file, graph_title, output_div_file):
-    div = get_plot_div(pd.read_csv(source_csv_file), graph_title)
+def write_graph_div_file(source_csv_file, output_div_file):
+    div = get_plot_div(pd.read_csv(source_csv_file))
 
     with open(output_div_file, 'w') as file:
         file.write(div)
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 4:
-        raise ValueError('usage: source_csv_file graph_title output_file')
+    if len(sys.argv) != 3:
+        raise ValueError('usage: source_csv_file output_file')
 
-    write_graph_div_file(sys.argv[1], sys.argv[2], sys.argv[3])
+    write_graph_div_file(sys.argv[1], sys.argv[2])

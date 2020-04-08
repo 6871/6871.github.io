@@ -4,6 +4,6 @@
 tmp
 venv
 debug_*.csv
-daily_mortality_averaged_*_days.csv
-daily_mortality_averaged_*_days.div
+daily_mortality_averaged_*
 time_series_covid19_deaths_global.csv
+tmp.*

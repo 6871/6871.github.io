@@ -1,0 +1,205 @@
+ISO,Name,Population,Key
+AF,Afghanistan,37.2,Afghanistan:Main
+AL,Albania,2.9,Albania:Main
+DZ,Algeria,42.7,Algeria:Main
+AO,Angola,31.8,Angola:Main
+AG,"Antigua and Barbuda",0.1,"Antigua and Barbuda:Main"
+AR,Argentina,45.1,Argentina:Main
+AM,Armenia,2.9,Armenia:Main
+AW,Aruba,0.1,Aruba:Main
+AU,Australia1,25.1,"Australia:Australia Provinces Sum"
+AT,Austria,8.8,Austria:Main
+AZ,Azerbaijan2,10,Azerbaijan2:Main
+BS,Bahamas,0.4,Bahamas:Main
+BH,Bahrain,1.6,Bahrain:Main
+BD,Bangladesh,168.1,Bangladesh:Main
+BB,Barbados,0.3,Barbados:Main
+BY,Belarus,9.4,Belarus:Main
+BE,Belgium,11.6,Belgium:Main
+BZ,Belize,0.4,Belize:Main
+BJ,Benin,11.8,Benin:Main
+BT,Bhutan,0.8,Bhutan:Main
+BO,"Bolivia (Plurinational State of)",11.4,"Bolivia (Plurinational State of):Main"
+BA,"Bosnia and Herzegovina",3.5,"Bosnia and Herzegovina:Main"
+BW,Botswana,2.4,Botswana:Main
+BR,Brazil,212.4,Brazil:Main
+BN,"Brunei Darussalam",0.4,"Brunei Darussalam:Main"
+BG,Bulgaria,7,Bulgaria:Main
+BF,"Burkina Faso",20.3,"Burkina Faso:Main"
+BI,Burundi,11.6,Burundi:Main
+KH,Cambodia,16.5,Cambodia:Main
+CM,"Cameroon, Republic of",25.3,"Cameroon, Republic of:Main"
+CA,Canada,37.3,"Canada:Canada Provinces Sum"
+CV,"Cape Verde",0.6,"Cape Verde:Main"
+CF,"Central African Republic",4.8,"Central African Republic:Main"
+TD,Chad,15.8,Chad:Main
+CL,Chile,18.3,Chile:Main
+CN,China3,1420.1,"China:China Provinces Sum"
+HK,"China, Hong Kong SAR4",7.5,"China, Hong Kong SAR4:Main"
+MO,"China, Macao SAR5",0.6,"China, Macao SAR5:Main"
+CO,Colombia,49.8,Colombia:Main
+KM,Comoros,0.9,Comoros:Main
+CD,"Congo, Democratic Republic of the",86.7,"Congo, Democratic Republic of the:Main"
+CG,"Congo, Republic of the",5.5,"Congo, Republic of the:Main"
+CR,"Costa Rica",5,"Costa Rica:Main"
+CI,"Côte d'Ivoire",25.5,"Côte d'Ivoire:Main"
+HR,Croatia,4.1,Croatia:Main
+CU,Cuba,11.5,Cuba:Main
+CW,Curacao,0.2,Curacao:Main
+CY,Cyprus6,1.2,Cyprus6:Main
+CZ,Czechia,10.6,Czechia:Main
+DK,Denmark,5.8,Denmark:Main
+DJ,Djibouti,1,Djibouti:Main
+DM,Dominica,0.1,Dominica:Main
+DO,"Dominican Republic",11,"Dominican Republic:Main"
+EC,Ecuador,17.1,Ecuador:Main
+EG,Egypt,101.2,Egypt:Main
+SV,"El Salvador",6.4,"El Salvador:Main"
+GQ,"Equatorial Guinea",1.4,"Equatorial Guinea:Main"
+ER,Eritrea,5.3,Eritrea:Main
+EE,Estonia,1.3,Estonia:Main
+SZ,Eswatini,1.4,Eswatini:Main
+ET,Ethiopia,110.1,Ethiopia:Main
+FJ,Fiji,0.9,Fiji:Main
+FI,Finland7,5.6,Finland7:Main
+FR,France,65.5,France:Main
+GF,"French Guiana",0.3,"French Guiana:Main"
+PF,"French Polynesia",0.3,"French Polynesia:Main"
+GA,Gabon,2.1,Gabon:Main
+GM,Gambia,2.2,Gambia:Main
+GE,Georgia8,3.9,Georgia8:Main
+DE,Germany,82.4,Germany:Main
+GH,Ghana,30.1,Ghana:Main
+GR,Greece,11.1,Greece:Main
+GD,Grenada,0.1,Grenada:Main
+GP,Guadeloupe9,0.4,Guadeloupe9:Main
+GU,Guam,0.2,Guam:Main
+GT,Guatemala,17.6,Guatemala:Main
+GN,Guinea,13.4,Guinea:Main
+GW,Guinea-Bissau,2,Guinea-Bissau:Main
+GY,Guyana,0.8,Guyana:Main
+HT,Haiti,11.2,Haiti:Main
+HN,Honduras,9.6,Honduras:Main
+HU,Hungary,9.7,Hungary:Main
+IS,Iceland,0.3,Iceland:Main
+IN,India,1368.7,India:Main
+ID,Indonesia,269.5,Indonesia:Main
+IR,"Iran (Islamic Republic of)",82.8,"Iran (Islamic Republic of):Main"
+IQ,Iraq,40.4,Iraq:Main
+IE,Ireland,4.8,Ireland:Main
+IL,Israel,8.6,Israel:Main
+IT,Italy,59.2,Italy:Main
+JM,Jamaica,2.9,Jamaica:Main
+JP,Japan,126.9,Japan:Main
+JO,Jordan,10.1,Jordan:Main
+KZ,Kazakhstan,18.6,Kazakhstan:Main
+KE,Kenya,52.2,Kenya:Main
+KI,Kiribati,0.1,Kiribati:Main
+KP,"Korea, Democratic People's Republic of",25.7,"Korea, Democratic People's Republic of:Main"
+KR,"Korea, Republic of",51.3,"Korea, Republic of:Main"
+KW,Kuwait,4.2,Kuwait:Main
+KG,Kyrgyzstan,6.2,Kyrgyzstan:Main
+LA,"Lao People's Democratic Republic",7.1,"Lao People's Democratic Republic:Main"
+LV,Latvia,1.9,Latvia:Main
+LB,Lebanon,6.1,Lebanon:Main
+LS,Lesotho,2.3,Lesotho:Main
+LR,Liberia,5,Liberia:Main
+LY,Libya,6.6,Libya:Main
+LT,Lithuania,2.9,Lithuania:Main
+LU,Luxembourg,0.6,Luxembourg:Main
+MG,Madagascar,27,Madagascar:Main
+MW,Malawi,19.7,Malawi:Main
+MY,Malaysia10,32.5,Malaysia10:Main
+MV,Maldives,0.5,Maldives:Main
+ML,Mali,19.7,Mali:Main
+MT,Malta,0.4,Malta:Main
+MQ,Martinique,0.4,Martinique:Main
+MR,Mauritania,4.7,Mauritania:Main
+MU,Mauritius11,1.3,Mauritius11:Main
+MX,Mexico,132.3,Mexico:Main
+FM,"Micronesia (Federated States of)",0.1,"Micronesia (Federated States of):Main"
+MD,"Moldova, Republic of12",4,"Moldova, Republic of12:Main"
+MN,Mongolia,3.2,Mongolia:Main
+ME,Montenegro,0.6,Montenegro:Main
+MA,Morocco,36.6,Morocco:Main
+MZ,Mozambique,31.4,Mozambique:Main
+MM,Myanmar,54.3,Myanmar:Main
+NA,Namibia,2.6,Namibia:Main
+NP,Nepal,29.9,Nepal:Main
+NL,Netherlands,17.1,Netherlands:Main
+NC,"New Caledonia",0.3,"New Caledonia:Main"
+NZ,"New Zealand",4.8,"New Zealand:Main"
+NI,Nicaragua,6.4,Nicaragua:Main
+NE,Niger,23.2,Niger:Main
+NG,Nigeria,201,Nigeria:Main
+NO,Norway13,5.4,Norway13:Main
+OM,Oman,5,Oman:Main
+PK,Pakistan,204.6,Pakistan:Main
+PS,Palestine14,5.2,Palestine14:Main
+PA,Panama,4.2,Panama:Main
+PG,"Papua New Guinea",8.6,"Papua New Guinea:Main"
+PY,Paraguay,7,Paraguay:Main
+PE,Peru,32.9,Peru:Main
+PH,Philippines,108.1,Philippines:Main
+PL,Poland,38,Poland:Main
+PT,Portugal,10.3,Portugal:Main
+PR,"Puerto Rico",3.7,"Puerto Rico:Main"
+QA,Qatar,2.7,Qatar:Main
+RE,Reunion,0.9,Reunion:Main
+RO,Romania,19.5,Romania:Main
+RU,"Russian Federation",143.9,"Russian Federation:Main"
+RW,Rwanda,12.8,Rwanda:Main
+KN,"Saint Kitts and Nevis",0.1,"Saint Kitts and Nevis:Main"
+LC,"Saint Lucia",0.2,"Saint Lucia:Main"
+VC,"Saint Vincent and the Grenadines",0.1,"Saint Vincent and the Grenadines:Main"
+WS,Samoa,0.2,Samoa:Main
+SM,"San Marino",0,"San Marino:Main"
+ST,"Sao Tome and Principe",0.2,"Sao Tome and Principe:Main"
+SA,"Saudi Arabia",34.1,"Saudi Arabia:Main"
+SN,Senegal,16.7,Senegal:Main
+RS,Serbia15,8.7,Serbia15:Main
+SC,Seychelles,0.1,Seychelles:Main
+SL,"Sierra Leone",7.9,"Sierra Leone:Main"
+SG,Singapore,5.9,Singapore:Main
+SX,"Sint Maarten",0,"Sint Maarten:Main"
+SK,Slovakia,5.5,Slovakia:Main
+SI,Slovenia,2.1,Slovenia:Main
+SB,"Solomon Islands",0.6,"Solomon Islands:Main"
+SO,Somalia,15.6,Somalia:Main
+ZA,"South Africa",58.1,"South Africa:Main"
+SS,"South Sudan",13.3,"South Sudan:Main"
+ES,Spain16,46.4,Spain:Main
+LK,"Sri Lanka",21,"Sri Lanka:Main"
+SD,Sudan,42.5,Sudan:Main
+SR,Suriname,0.6,Suriname:Main
+SE,Sweden,10.1,Sweden:Main
+CH,Switzerland,8.6,Switzerland:Main
+SY,"Syrian Arab Republic",18.5,"Syrian Arab Republic:Main"
+TJ,Tajikistan,9.3,Tajikistan:Main
+TZ,"Tanzania, United Republic of17",60.9,"Tanzania, United Republic of17:Main"
+TH,Thailand,69.3,Thailand:Main
+MK,"The former Yugoslav Republic of Macedonia",2.1,"The former Yugoslav Republic of Macedonia:Main"
+TL,"Timor-Leste, Democratic Republic of",1.4,"Timor-Leste, Democratic Republic of:Main"
+TG,Togo,8.2,Togo:Main
+TO,Tonga,0.1,Tonga:Main
+TT,"Trinidad and Tobago",1.4,"Trinidad and Tobago:Main"
+TN,Tunisia,11.8,Tunisia:Main
+TR,Turkey,83,Turkey:Main
+TM,Turkmenistan,5.9,Turkmenistan:Main
+TC,"Turks and Caicos Islands",0,"Turks and Caicos Islands:Main"
+TV,Tuvalu,0,Tuvalu:Main
+UG,Uganda,45.7,Uganda:Main
+UA,Ukraine18,43.8,Ukraine18:Main
+AE,"United Arab Emirates",9.7,"United Arab Emirates:Main"
+GB,"United Kingdom",67,"United Kingdom:Main"
+US,"United States of America",329.1,"US:Main"
+VI,"United States Virgin Islands",0.1,"United States Virgin Islands:Main"
+UY,Uruguay,3.5,Uruguay:Main
+UZ,Uzbekistan,32.8,Uzbekistan:Main
+VU,Vanuatu,0.3,Vanuatu:Main
+VE,"Venezuela (Bolivarian Republic of)",32.8,"Venezuela (Bolivarian Republic of):Main"
+VN,"Viet Nam",97.4,"Viet Nam:Main"
+EH,"Western Sahara",0.6,"Western Sahara:Main"
+YE,Yemen,29.6,Yemen:Main
+ZM,Zambia,18.1,Zambia:Main
+ZW,Zimbabwe,17.3,Zimbabwe:Main
