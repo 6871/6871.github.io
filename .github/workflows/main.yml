@@ -8,12 +8,13 @@ name: Graph Updater
 
 on:
   schedule:
-    # Run every 3 hours in case data is updated more often than daily
-#    - cron: '0 0,3,6,9,12,15,18,21 * * *'
+    # Run every 3 hours in case data is updated more often than daily; schedule only works on master branch
+    - cron: '0 0,3,6,9,12,15,18,21 * * *'
     # Run every 10 minutes
     #- cron: '*/10 * * * *'
-    # Run every 5 minutes
-    - cron: '*/5 * * * *'
+  push:
+    branches:
+      - dev
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
