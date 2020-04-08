@@ -66,9 +66,11 @@ jobs:
 
       - name: Upload files
         run: |
+          git status
           git config --local user.email "ci@github.com"
           git config --local user.name "ci"
-          git pull
           git add update_timestamp.txt graph_*.div
+          git status
           git commit -m "CI update @ $(date)"
+          git status
           git push
