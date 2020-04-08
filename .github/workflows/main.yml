@@ -36,7 +36,7 @@ jobs:
       - name: Fetch latest data file & update timestamp
         run: |
           source_csv_file='time_series_covid19_deaths_global.csv'
-          curl -L -O "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/${source_csv_file)"
+          curl -L -O "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/${source_csv_file}"
           printf '%s' "$(date +'%^a %Y-%^b-%d %T %Z')" > update_timestamp.txt
 
       - name: Generate graph DIV files (from interim CSV files)
