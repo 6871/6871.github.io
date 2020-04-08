@@ -20,6 +20,9 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   build:
+    env:
+      source_csv_file: time_series_covid19_deaths_global.csv
+
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -35,7 +38,6 @@ jobs:
 
       - name: Fetch latest data file & update timestamp
         run: |
-          source_csv_file='time_series_covid19_deaths_global.csv'
           curl -L -O "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/${source_csv_file}"
           printf '%s' "$(date +'%^a %Y-%^b-%d %T %Z')" > update_timestamp.txt
 
