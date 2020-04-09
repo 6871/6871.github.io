@@ -1,5 +1,15 @@
 <html lang="en" >
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163212718-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163212718-1');
+    </script>
+
     <meta charset="utf-8">
     <script type="text/javascript" src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -23,18 +33,18 @@
                 </div>
             </div>
             <div class="header_left">
-                <div class="controls">Average days</div>
+                <div class="controls">Moving average days</div>
                 <input id="btn_0_avg" class="controls" type="button" value="0" />
                 <input id="btn_3_avg" class="controls" type="button" value="3" />
                 <input id="btn_5_avg" class="controls" type="button" value="5" />
                 <input id="btn_15_avg" class="controls" type="button" value="15" />
             </div>
             <div class="header_left">
-                <div class="controls">by population</div>
-                <input id="btn_0_avg_pct" class="controls" type="button" value="0 (%)" />
-                <input id="btn_3_avg_pct" class="controls" type="button" value="3 (%)" />
-                <input id="btn_5_avg_pct" class="controls" type="button" value="5 (%)" />
-                <input id="btn_15_avg_pct" class="controls" type="button" value="15 (%)" />
+                <div class="controls">as population %</div>
+                <input id="btn_0_avg_pct" class="controls" type="button" value="0" />
+                <input id="btn_3_avg_pct" class="controls" type="button" value="3" />
+                <input id="btn_5_avg_pct" class="controls" type="button" value="5" />
+                <input id="btn_15_avg_pct" class="controls" type="button" value="15" />
             </div>
         </div>
         <div class="divider"></div>
