@@ -8,8 +8,8 @@ name: Graph Updater
 
 on:
   schedule:
-    # Run every 3 hours in case data is updated more often than daily; schedule only works on master branch
-    - cron: '0 0,3,6,9,12,15,18,21 * * *'
+    # Run every 6th hour in case data is updated more often than daily; schedule only works on master branch
+    - cron: '0 0,6,12,18 * * *'
     # Run every 10 minutes
     #- cron: '*/10 * * * *'
   push:
