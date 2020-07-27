@@ -21,15 +21,15 @@ def get_plot_div(df):
     fig.update_traces(mode='lines+markers')
 
     show_traces = {
-        'Australia:Australia Provinces Sum': 'yellow',
-        'Canada:Canada Provinces Sum': 'teal',
-        'China:China Provinces Sum': 'grey',
-        'Czechia:Main': 'blue',
-        'France:Main': 'green',
-        'Germany:Main': 'gold',
-        'Ireland:Main': 'lime',
-        'Italy:Main': 'orange',
-        'Spain:Main': 'magenta',
+        # 'Australia:Australia Provinces Sum': 'yellow',
+        # 'Canada:Canada Provinces Sum': 'teal',
+        # 'China:China Provinces Sum': 'grey',
+        # 'Czechia:Main': 'blue',
+        # 'France:Main': 'green',
+        # 'Germany:Main': 'gold',
+        # 'Ireland:Main': 'lime',
+        # 'Italy:Main': 'orange',
+        # 'Spain:Main': 'magenta',
         'United Kingdom:Main': 'blue',
         'US:Main': 'red'
     }
